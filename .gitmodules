@@ -1,0 +1,81 @@
+[submodule "vim/vim.symlink/bundle/git-runtime"]
+	path = vim/vim.symlink/bundle/git-runtime
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/vim.symlink/bundle/endwise"]
+	path = vim/vim.symlink/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "vim/vim.symlink/bundle/surround"]
+	path = vim/vim.symlink/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/vim.symlink/bundle/rails"]
+	path = vim/vim.symlink/bundle/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "vim/vim.symlink/bundle/ragtag"]
+	path = vim/vim.symlink/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "vim/vim.symlink/bundle/nerdtree"]
+	path = vim/vim.symlink/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/vim.symlink/bundle/nerdcommenter"]
+	path = vim/vim.symlink/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/vim.symlink/bundle/syntastic"]
+	path = vim/vim.symlink/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/vim.symlink/bundle/csapprox"]
+	path = vim/vim.symlink/bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
+[submodule "vim/vim.symlink/bundle/vim-ruby"]
+	path = vim/vim.symlink/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/vim.symlink/bundle/snipmate"]
+	path = vim/vim.symlink/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/vim.symlink/bundle/bufexplorer"]
+	path = vim/vim.symlink/bundle/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "vim/vim.symlink/bundle/a"]
+	path = vim/vim.symlink/bundle/a
+	url = https://github.com/vim-scripts/a.vim.git
+[submodule "vim/vim.symlink/bundle/taglist"]
+	path = vim/vim.symlink/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "vim/vim.symlink/bundle/indexed-search"]
+	path = vim/vim.symlink/bundle/indexed-search
+	url = https://github.com/vim-scripts/IndexedSearch.git
+[submodule "vim/vim.symlink/bundle/delimitMate"]
+	path = vim/vim.symlink/bundle/delimitMate
+	url = https://github.com/vim-scripts/delimitMate.vim.git
+[submodule "vim/vim.symlink/bundle/matchit"]
+	path = vim/vim.symlink/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "vim/vim.symlink/bundle/markdown-runtime"]
+	path = vim/vim.symlink/bundle/markdown-runtime
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/vim.symlink/bundle/gundo"]
+	path = vim/vim.symlink/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/vim.symlink/bundle/solarized"]
+	path = vim/vim.symlink/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/vim.symlink/bundle/command-t"]
+	path = vim/vim.symlink/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim/vim.symlink/bundle/fugitive"]
+	path = vim/vim.symlink/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/vim.symlink/bundle/repeat"]
+	path = vim/vim.symlink/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim/vim.symlink/bundle/ack"]
+	path = vim/vim.symlink/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/vim.symlink/bundle/tabular"]
+	path = vim/vim.symlink/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/vim.symlink/bundle/vim-coffee-script"]
+	path = vim/vim.symlink/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/vim.symlink/bundle/unimpaired"]
+	path = vim/vim.symlink/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
