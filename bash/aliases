@@ -1,0 +1,48 @@
+# web server
+alias webserver="python -m SimpleHTTPServer"
+
+# start redis
+alias redisserver="cd ~/redis-2.4.2/src && ./redis-server"
+
+# bash
+alias ls="ls -G"
+alias ll="ls"
+alias la="ls -lah"
+
+# editing and reload bashrc
+alias bb="mate ~/.bash"
+alias reload="source ~/.bashrc"
+
+# rails
+alias r="rails"
+
+# projects
+alias pro="cd ~/_projects"
+alias code="cd ~/_code"
+
+# work
+alias affluent="pro && cd mastercard/affluent/trunk/src && svn up && mate ."
+alias showpass="pro && cd mastercard/showpass/trunk/src"
+alias lac="pro && cd mastercard/lac/affluent/trunk/web"
+alias offers="pro && cd mastercard/affluent-sites-content-tool/trunk"
+alias mobile="pro && cd mastercard/mobile-payment/trunk"
+alias cps="pro && cd mastercard/cps/business-card/trunk/src"
+alias surpreenda="pro && cd mastercard/campaigns/surpreenda/trunk"
+alias toddy="pro && cd toddy/facebook/aonde_a_vaca_vai/trunk && svn up"
+
+# tim
+alias tim="pro && cd tim/seuouvidovaleumchip"
+alias synctim="git checkout timbeta && git pull origin timbeta && git rebase timbeta work"
+alias mergetim="synctim && git checkout timbeta && git merge work && git push origin timbeta && git checkout work"
+
+# toddy
+# alias toddy="cd ~/_projects/toddy/site/branches/2010/web/site && mate . && cd ~/_apps/mampstack-5.3.6-0 && ./ctlscript.sh restart && echo STARTED TODDY WEBSERVER. USING URL: http://localhost:8080/hotsite/landing/content/home/ && open http://localhost:8080/hotsite/landing/content/home/ && cd ~/_projects/toddy/site/branches/2010/web/site && svn up"
+
+# create simple project structure
+alias create_structure="mkdir -p {trunk/src/_/{assets/{fonts,images,javascripts/{src,js},stylesheets/{src,css}},config},tags/,branches/} && touch trunk/src/index.html && touch trunk/src/Gemfile"
+
+# show hidden files
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+
+# hide hidden files
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"

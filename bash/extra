@@ -1,0 +1,5 @@
+# Loads RVM (Ruby Version Manager)
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# Loads NVM (Node Version Manager)
+. ~/.nvm/nvm.sh

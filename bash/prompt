@@ -1,0 +1,36 @@
+# git + svn
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWUPSTREAM=auto
+export SVN_SHOWDIRTYSTATE=1
+parse_git_branch () { __git_ps1; }
+parse_svn_branch() { parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk -F / '{print "(svn::"$1 "/" $2 ")"}'; }
+parse_svn_url() { svn info 2>/dev/null | sed -ne 's#^URL: ##p'; }
+parse_svn_repository_root() { svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'; }
+
+# add git colors
+export LESS="-erX"
+
+# ls colors
+export LSCOLORS="dxfxcxdxbxegedabagacad"
+
+# rvm prompt
+RVM_PROMPT="\$(~/.rvm/bin/rvm-prompt)"
+
+# colors
+GRAY="\033[1;30m"
+MAGENTA="\033[1;31m"
+GREEN="\033[1;32m"
+ORANGE="\033[1;33m"
+PURPLE="\033[1;35m"
+CYAN="\033[1;36m"
+WHITE="\033[1;37m"
+LIGHT_GRAY="\033[0;37m"
+BOLD=""
+RESET="\033[m"
+
+# PS1
+PS1="\n\n\[${BOLD}\]\[$PURPLE\]\w\[$CYAN\]\$(parse_git_branch)\$(parse_svn_branch)\[${GRAY}\] $RVM_PROMPT\n\[$LIGHT_GRAY\]\$ \[$RESET\]"
+# PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+# export PS1="\n\n\[\e[0;36m\][\$(~/.rvm/bin/rvm-prompt)]\[\e[40m\] \n\[\e[1;35m\]\w\[\e[1;36m\]\$(parse_git_branch)\$(parse_svn_branch) \[\e[0m\]\$ "

@@ -1,0 +1,8 @@
+source ~/dotfiles/bash/prompt
+source ~/dotfiles/bash/exports
+source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/extra
+source ~/dotfiles/bash/middleman
+
+source ~/dotfiles/git/aliases
+source ~/dotfiles/git/completion

@@ -1,0 +1,9 @@
+# path
+export PATH="/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/mysql/bin:/usr/local:/usr/local/sbin:/Applications/MacVim.app/Contents/MacOS:$HOME/local/node/bin:$HOME/local/bin:$HOME/_libs/redis-2.2.12/src/redis-cli:$PATH"
+
+# mysql
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+
+# editors
+export EDITOR="vim"
+export SVN_EDITOR="vim"
