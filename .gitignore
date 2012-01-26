@@ -1,1 +1,7 @@
-vim/vim.symlink/bundle/*
+tags
+*~
+*.swp
+.VimballRecord
+undofiles/*
+projects/*
+.netrwhist
