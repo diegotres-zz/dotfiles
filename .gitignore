@@ -1,7 +1,8 @@
 tags
-# *~
+*~
 *.swp
 .VimballRecord
 undofiles/*
 projects/*
 .netrwhist
+vim/vim.symlink/undofiles/
