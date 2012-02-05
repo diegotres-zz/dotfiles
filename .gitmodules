@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink/bundle/nerdcommenter"]
 	path = vim/vim.symlink/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/vim.symlink/bundle/snipmate.vim"]
+	path = vim/vim.symlink/bundle/snipmate.vim
+	url = git://github.com/msanders/snipmate.vim.git
