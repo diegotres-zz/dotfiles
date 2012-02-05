@@ -66,7 +66,7 @@ set guifont=Menlo:h12
 " Behaviour {{{1
 " ==============================================================
 set backspace=indent,eol,start
-set history=50
+set history=500
 set incsearch
 set visualbell t_vb=
 set hidden
@@ -124,8 +124,6 @@ set noswapfile
 " ==============================================================
 
 " Command-T
-let g:CommandTMaxFiles=20
-
 
 
 
