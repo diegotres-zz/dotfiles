@@ -1,0 +1,133 @@
+
+" Important things {{{1
+" ==============================================================
+
+" Necessary for lots of cool vim things
+set nocompatible
+
+" set leader
+let mapleader = ","
+
+" Folding Stuffs
+" set foldmethod=marker
+
+" Load bundled plugins
+" call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" }}}
+
+
+" Appearance {{{1
+" ==============================================================
+colorscheme blackboard
+
+" show extra informations on the status bar
+set ruler
+
+" colorize status bar
+set laststatus=2
+
+" show commands
+set showcmd
+
+" show invisibles
+set list
+
+" set invisibles chars
+set listchars=tab:▸\ ,eol:¬
+
+" show line numbers
+set number
+
+" highlight the current line
+set cursorline
+
+" Number of horizontal lines on the screen
+set lines=100
+
+" remove the toolbar
+set guioptions-=T
+
+" remove scrollbars
+set guioptions-=r
+
+" Sets the font and size
+set guifont=Menlo:h12
+
+" have error messages red on white
+" highlight ErrorMsg guibg=White guifg=Red
+
+" }}}
+
+
+
+" Behaviour {{{1
+" ==============================================================
+set backspace=indent,eol,start
+set history=50
+set incsearch
+set visualbell t_vb=
+set hidden
+set nojoinspaces
+set wildmode=longest,list
+set nrformats=
+if has('mouse')
+  set mouse=a
+endif
+
+" }}}
+
+
+
+" Indentation {{{1
+" ==============================================================
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+set autoindent
+
+" }}}
+
+
+
+" Misc settings {{{1
+" ==============================================================
+
+" Space will toggle folds!
+nnoremap <space> za
+
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+map N Nzz
+map n nzz
+
+" And so is Artificial Intellegence!
+set smartcase
+
+" }}}
+
+
+
+" Disable swapfile and backup {{{1
+" ==============================================================
+set nobackup
+set noswapfile
+
+" }}}
+
+
+" Plugins {{{1
+" ==============================================================
+
+" Command-T
+let g:CommandTMaxFiles=20
+
+
+
+
+" }}}
+
