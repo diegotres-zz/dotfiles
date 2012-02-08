@@ -8,6 +8,13 @@ set nocompatible
 " set leader
 let mapleader = ","
 
+" Enable filetype plugin
+filetype plugin on
+filetype indent on
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
 " Folding Stuffs
 " set foldmethod=marker
 
@@ -56,6 +63,9 @@ set guioptions-=r
 " Sets the font and size
 set guifont=Menlo:h12
 
+" No wrap lines
+set nowrap
+
 " have error messages red on white
 " highlight ErrorMsg guibg=White guifg=Red
 
@@ -71,6 +81,9 @@ set incsearch
 set visualbell t_vb=
 set hidden
 set nojoinspaces
+set wildmenu
+set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
+set wildmode=list:full
 set wildmode=longest,list
 set nrformats=
 if has('mouse')
@@ -108,6 +121,16 @@ map n nzz
 " And so is Artificial Intellegence!
 set smartcase
 
+" Disable arrow keys
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+
 " }}}
 
 
@@ -125,7 +148,10 @@ set noswapfile
 
 " Command-T
 
-
+" NERDCommenter like textmate :)
+vmap <D-/> ,c<space>gv
+map <D-/> ,c<space>
+imap <D-/> <esc>,c<space>
 
 " }}}
 
