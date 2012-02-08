@@ -6,4 +6,4 @@ undofiles/*
 projects/*
 .netrwhist
 vim/vim.symlink/undofiles/
-vim/vim.symlink/bundle/snipmate.vim/doc/tags
+vim/vim.symlink/bundle/snipmate.vim
