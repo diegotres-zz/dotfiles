@@ -34,8 +34,8 @@ if has("gui_running")
   highlight Visual guibg=#283A76
 
   "General Colors
-  "highlight Comment guifg=#AEAEAE
-  highlight Comment guifg=#3a4571
+  highlight Comment guifg=#AEAEAE
+  "highlight Comment guifg=#3a4571
   highlight Constant guifg=#D8FA3C
   highlight Keyword guifg=#FFDE00
   highlight String guifg=#61CE3C

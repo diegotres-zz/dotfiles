@@ -8,20 +8,20 @@ set nocompatible
 " set leader
 let mapleader = ","
 
-" Enable filetype plugin
-filetype plugin on
-filetype indent on
-
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" Folding Stuffs
-" set foldmethod=marker
-
 " Load bundled plugins
-" call pathogen#infect()
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype plugin indent on
+
+" Prevents some security exploits
+set modelines=0
+
+" Encoding
+set encoding=utf-8
 
 " }}}
 
@@ -66,6 +66,9 @@ set guifont=Menlo:h12
 " No wrap lines
 set nowrap
 
+" Relative number of lines
+set relativenumber
+
 " have error messages red on white
 " highlight ErrorMsg guibg=White guifg=Red
 
@@ -77,6 +80,7 @@ set nowrap
 " ==============================================================
 set backspace=indent,eol,start
 set history=1000
+set scrolloff=1
 set incsearch
 set visualbell t_vb=
 set hidden
@@ -89,6 +93,24 @@ set nrformats=
 if has('mouse')
   set mouse=a
 endif
+
+"searching and moving
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+map N Nzz
+map n nzz
 
 " }}}
 
@@ -109,27 +131,43 @@ set autoindent
 
 " Misc settings {{{1
 " ==============================================================
+" perfect
+nnoremap ; :
 
 " Space will toggle folds!
 nnoremap <space> za
 
-" Search mappings: These will make it so that going to the next one in a
-" search will center on the line it's found in.
-map N Nzz
-map n nzz
-
-" And so is Artificial Intellegence!
-set smartcase
-
 " Disable arrow keys
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+" Left/Right arrow keys change buffers in all modes
+noremap <Left> <Esc>:bp<CR>
+inoremap <Left> <Esc>:bp<CR>
+nnoremap <Left> <Esc>:bp<CR>
+vnoremap <Left> <Esc>:bp<CR>
+
+noremap <Right> <Esc>:bn<CR>
+inoremap <Right> <Esc>:bn<CR>
+nnoremap <Right> <Esc>:bn<CR>
+vnoremap <Right> <Esc>:bn<CR>
+
+" Quicker Escaping
+inoremap jj <ESC>
+
+" Fast window switch
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " }}}
 
