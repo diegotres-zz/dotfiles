@@ -45,9 +45,6 @@ set list
 " set invisibles chars
 set listchars=tab:▸\ ,eol:¬
 
-" show line numbers
-set number
-
 " highlight the current line
 set cursorline
 
@@ -65,6 +62,9 @@ set guifont=Menlo:h12
 
 " No wrap lines
 set nowrap
+
+" show line numbers
+" set number
 
 " Relative number of lines
 set relativenumber
@@ -86,7 +86,7 @@ set visualbell t_vb=
 set hidden
 set nojoinspaces
 set wildmenu
-set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
+set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class,*.svn
 set wildmode=list:full
 set wildmode=longest,list
 set nrformats=

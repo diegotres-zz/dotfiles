@@ -21,7 +21,7 @@ alias pro="cd ~/_projects"
 alias code="cd ~/_code"
 
 # work
-alias affluent="pro && cd mastercard/affluent/trunk/src && svn up && mate ."
+alias affluent="pro && cd mastercard/campaigns/affluent/trunk/src"
 alias showpass="pro && cd mastercard/showpass/trunk/src"
 alias lac="pro && cd mastercard/lac/affluent/trunk/web"
 alias offers="pro && cd mastercard/affluent-sites-content-tool/trunk"
